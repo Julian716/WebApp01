@@ -1,0 +1,34 @@
+{% include 'header.html' %}
+  <main class="flex-grow-1">
+    <header class="bg-primary text-white py-4 mb-3">
+      <div class="container-fluid px-5">
+        <h1 class="fw-bold text-start mb-2">
+          Sorte de la suerte
+        </h1>
+        <p class="lead text-start mb-0 fs-6">
+          Participa en este increíble sorteo y gana premios fantásticos
+        </p>
+      </div>
+    </header>
+    <!-- Breadcrumb -->
+    <div class="container-fluid px-5 mb-4">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Sorteo</li>
+        </ol>
+      </nav>
+    </div>
+    <div class="container-fluid px-5 pb-5">
+        <form method="post" action="/sorteo">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2 class="mb-0">Increible sorteo</h2>
+                <input type="text" name="input_number1" placeholder="Ingrese un valor del 1 al 100" required>
+                <input type="text" name="input_number2" placeholder="Ingrese un valor del 1 al 100" required>
+                <input type="text" name="input_number3" placeholder="Ingrese un valor del 1 al 100" required>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+  </main>
+{% include 'footer.html' %}
